@@ -99,7 +99,7 @@ const FormComponent = () => {
                       onChange={formik.handleChange}
                     />
                     {formik.touched.latitude && formik.errors.latitude ? (
-                      <div>{formik.errors.latitude}</div>
+                      <div style={{color:"red"}} >{formik.errors.latitude}</div>
                     ) : null}
                   </div>
                 </div>{" "}
@@ -117,7 +117,7 @@ const FormComponent = () => {
                       onChange={formik.handleChange}
                     />
                     {formik.touched.longitude && formik.errors.longitude ? (
-                      <div>{formik.errors.longitude}</div>
+                      <div style={{color:"red"}}>{formik.errors.longitude}</div>
                     ) : null}
                   </div>
                 </div>
